@@ -1,7 +1,11 @@
 #åpner fil og lager liste
 with open("bolla.txt", "r") as primtall_liste:
-	lines = "bolla.txt".readlines()
+	lines = primtall_liste.readlines()
 print(lines)
+
+#Alle tallene ender med /n, dermed er det en enkel måte å skille på dem. Evt må det også fjernes før man kan
+#begynne å regne. Tror tallene blir sett på som en string siden den har en bokstav bak seg og da går det ikke å 
+#Slette 
 
 '''Psaudokode: skal ta ut hver linje fra filen bolla.txt
 og legge til en liste, gå gjennom listen og plukke ut
