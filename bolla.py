@@ -5,6 +5,7 @@ with open("bolla.txt", "r") as primtall_liste:
 
 #Alle tallene ender med /n, dermed er det en enkel måte å skille på dem. Evt må det også fjernes før man kan
 #begynne å regne. Split opp evt ved en loop, eller så burde det vell finnes en smart funksjon å gjøre det på.
+#FIXA DET
 
 '''Psaudokode: skal ta ut hver linje fra filen bolla.txt
 og legge til en liste, gå gjennom listen og plukke ut
@@ -13,7 +14,8 @@ long_to_bytes() for å finne flagget.
 '''
 def is_prime(liste):
 	for i in liste:
-		print(i)
+		i.replace('\n', '')
+		print(int(i) /2) #HER skal du legge inn hva man skal dele på for å finne ut om det er et primtall
 
 
 is_prime(lines)
